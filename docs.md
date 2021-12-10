@@ -56,10 +56,10 @@ _Controllers folder:_
 			request: DELETE, response: the server deletes the TodoItem with matching id from the database.
 	The clientside application connects to the backend through these endpoints, getting data from and sending data to the database with their help. 
 
-##3. Description of client side app
-###Summary:
+## 3. Description of client side app
+### Summary:
 The frontend renders the UI and handles the user interactions in the browser, communicating with the backend at the same time.
-###Structure of the project:
+### Structure of the project:
 _index.js_
 The entry point of the frontend script, the UI is built here from the React.DOM in the render function.
 _App.js_
