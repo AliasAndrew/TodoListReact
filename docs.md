@@ -43,9 +43,9 @@
 	  This folder contains the API Controllers, in this project the TodoItemsController, which contains the API endpoints as actions (methods).  
 	  _TodoItemsController.cs_  
 	  Contains the API endpoints at  
-		  -  /api/TodoItems  
+-		/api/TodoItems  
 			  request: GET, response: the server sends back all the stored TodoItems in JSON format.  
-		  -  /api/TodoItems/{id}  
+-		/api/TodoItems/{id}  
 			request: GET, response: the server sends back the TodoItem that matches the id.  
 		-  /api/TodoItems/{id}  
 			request: PUT, response: the server updates the TodoItem with the matching id in the database.  
