@@ -59,7 +59,8 @@ _Data folder:_
 ## 3. Description of client side app
 ### Summary:
   The frontend renders the UI and handles the user interactions in the browser, communicating with the backend at the same time.
-  The main features are: viewing the todo list, adding new todo item, deleting an item from the list, changing list item priority. _warning: some of these features are yet to be implemented_
+  The main features are: viewing the todo list, adding new todo item, deleting an item from the list, changing list item priority.  
+  _warning: some of these features are yet to be implemented_
 ### Structure of the project:  
   _index.js_  
   The entry point of the frontend script, the UI is built here from the React.DOM in the render function.  
