@@ -23,7 +23,7 @@
   _Program.cs_  
   The entry point of the program, starts the program by creating a webhost, configuring it with the Startup class.  
   _Startup.cs_  
-  Basic configuration and service registration using dependency injection in the ... function. For this project the Controllers and SQL Server services have been added.  
+  Basic configuration and service registration using dependency injection in the ConfigureServices function. For this project the Controllers and SQL Server services have been added.  
   _Models folder:_   
   _TodoItem.cs_  
     The model file for the database and the controller, represents a list item in the todo list with the following properties:  
@@ -34,13 +34,13 @@
     -  status: the current status of the todo  
     -  prevId, nextId: the Ids for the previous and next TodoItem in the list, used to persist the priority of the item and help ordering them in the UI.  
   _Data folder:_  
-	  _...Context.cs_  
+	  _TodoListReactContext.cs_  
 	  This class inherits from ContextBase and represents access to the database. Contains the database table in a DbSet object.  
   _Migrations folder:_  
 	  This folder will be created from your model classes for your database migrations, which you can create and run with the Add-Migration and Update-Database commands.  
 	  The timestamped files represent the generated SQL commands for your database.  
   _Controllers folder:_  
-	  This folder contains the API Controllers, in this project the ...Controller, which contains the API endpoints as actions (methods).  
+	  This folder contains the API Controllers, in this project the TodoItemsController, which contains the API endpoints as actions (methods).  
 	  _TodoItemsController.cs_  
 	  Contains the API endpoints at  
 		  -  /api/TodoItems  
