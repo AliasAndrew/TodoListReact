@@ -63,12 +63,12 @@ _Data folder:_
   _index.js_  
   The entry point of the frontend script, the UI is built here from the React.DOM in the render function.  
   _App.js_  
-  The main component, renders the todo list from TodoItems and the AddTodo component and also contains the logic for handling them.  
+  The main component, renders the todo list from Todos and the AddForm component and also contains the logic for handling them.  
   _Components folder:_  
-	  _TodoItem.js_  
-	The component responsible for the rendering of the individual items in the list.
-	  _AddTodo.js_  
-	The component responsible for handling data from the AddTodo form and rendering it.
+	  _Todo.js_  
+	The component responsible for the rendering of the individual items in the list.  
+	  _AddForm.js_  
+	The component responsible for handling data from the AddForm form and rendering it.  
 
 
 
