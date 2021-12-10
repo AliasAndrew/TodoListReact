@@ -3,7 +3,19 @@
 export default function Todo(props) {
     return (
         <li className="row list-group-item d-flex justify-content-between">
-            {props.name}
+            <div className="col-2">
+                {props.name}
+            </div>
+            <div className="col-2">
+                {props.description}
+            </div>
+            <div className="col-2">
+                {props.status}
+            </div>
+            <div className="col-2">
+                {props.deadline}
+            </div>
+
             <div className="btn-group align-self-end">
                 <button
                     type="button"

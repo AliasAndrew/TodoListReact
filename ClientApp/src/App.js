@@ -36,10 +36,12 @@ function App(props) {
     function sortTodos() {
         //to be implemented
     }
-
-    function addTask(name) {
+    function postNewTask() {
+        //fetch
+    }
+    function addTask(name, desc, status, deadline) {
         //send data as an object stringified to server, object back is new task (with id now) + update other item task[length]
-        const newTask = { id: "id", name: name };
+        const newTask = { id: "id", name: name, description: desc, status: status, deadline: deadline };
         setTasks([...tasks, newTask]);
     }
 
@@ -64,9 +66,10 @@ function App(props) {
         <Todo
             id={task.id}
             name={task.name}
-            completed={task.completed}
+            description={task.description}
+            status={task.status}
+            deadline={task.deadline}
             key={task.id}
-            //toggleTaskCompleted={toggleTaskCompleted}
             deleteTask={deleteTask}
         />
     )
@@ -74,7 +77,7 @@ function App(props) {
 
     return (
         <div className="container">
-            <h1 className="text-center">TodoListReact</h1>
+            <h1 className="text-center m-3">TodoListReact</h1>
             <Form addTask={addTask} />
             <ul className="list-group">
                 {taskList}

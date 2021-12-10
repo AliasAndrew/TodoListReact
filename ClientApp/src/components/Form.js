@@ -2,23 +2,35 @@
 
 function Form(props) {
     const [name, setName] = useState('');
-    const [desc, setDesc] = useState('');
+    const [description, setDescription] = useState('');
     const [status, setStatus] = useState('');
     const [deadline, setDeadline] = useState('');
 
     function handleSubmit(e) {
         e.preventDefault();
-        props.addTask(name);
+        props.addTask(name, description, status, deadline);
         setName('');
+        setDescription('');
+        setStatus('');
+        setDeadline('');
     }
 
     function handleChange(e) {
         setName(e.target.value);
     }
+    function handleChangeDesc(e) {
+        setDescription(e.target.value);
+    }
+    function handleChangeStatus(e) {
+        setStatus(e.target.value);
+    }
+    function handleChangeDeadline(e) {
+        setDeadline(e.target.value);
+    }
 
     return (
-        <form onSubmit={handleSubmit} className="row">
-            <h3 className="">
+        <form onSubmit={handleSubmit} className="row m-3 justify-content-between">
+            <h3 className="text-muted">
                     New Todo:
             </h3>
             <div class="form-group">
@@ -39,22 +51,20 @@ function Form(props) {
                     id="new-todo-desc"
                     className="form-control"
                     name="description"
-                    value={desc}
+                    value={description}
                     placeholder="Enter todo description"
-                    onChange={handleChange}
+                    onChange={handleChangeDesc}
                 />
             </div>
 
             <div class="form-group">
-                <input
-                    type="text"
-                    id="new-todo-status"
-                    className="form-control"
-                    name="status"
-                    value={status}
-                    placeholder="Enter todo status"
-                    onChange={handleChange}
-                />
+                <select name="status" id="new-todo-status"
+                    className="form-control" onChange={handleChangeStatus}>
+                    <option value="in progress">in progress</option>
+                    <option value="done">done</option>
+                    <option value="postponed">postponed</option>
+                    <option value="pending">pending</option>
+                </select>
             </div>
 
             <div class="form-group">
@@ -64,7 +74,7 @@ function Form(props) {
                     className="form-control"
                     name="text"
                     value={deadline}
-                    onChange={handleChange}
+                    onChange={handleChangeDeadline}
                  />
             </div>
 
