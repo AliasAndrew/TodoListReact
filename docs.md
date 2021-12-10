@@ -66,9 +66,9 @@ _Data folder:_
   The main component, renders the todo list from TodoItems and the AddTodo component and also contains the logic for handling them.  
   _Components folder:_  
 	  _TodoItem.js_  
-	...  
+	The component responsible for the rendering of the individual items in the list.
 	  _AddTodo.js_  
-	...  
+	The component responsible for handling data from the AddTodo form and rendering it.
 
 
 
