@@ -59,16 +59,17 @@ _Data folder:_
 ## 3. Description of client side app
 ### Summary:
   The frontend renders the UI and handles the user interactions in the browser, communicating with the backend at the same time.
+  The main features are: viewing the todo list, adding new todo item, deleting an item from the list, changing list item priority. _warning: some of these features are yet to be implemented_
 ### Structure of the project:  
   _index.js_  
   The entry point of the frontend script, the UI is built here from the React.DOM in the render function.  
   _App.js_  
-  The main component, renders the todo list from Todos and the AddForm component and also contains the logic for handling them.  
+  The main component, renders the todo list from Todos and the Form component and also contains the logic for handling them.  
   _Components folder:_  
 	  _Todo.js_  
 	The component responsible for the rendering of the individual items in the list.  
-	  _AddForm.js_  
-	The component responsible for handling data from the AddForm form and rendering it.  
+	  _Form.js_  
+	The component responsible for handling data from the form and rendering it.  
 
 
 
