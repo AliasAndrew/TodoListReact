@@ -33,6 +33,7 @@
 -  deadline: the date by which the todo must be completed  
 -  status: the current status of the todo  
 -  prevId, nextId: the Ids for the previous and next TodoItem in the list, used to persist the priority of the item and help ordering them in the UI.  
+
 _Data folder:_  
 	  _TodoListReactContext.cs_  
 	  This class inherits from ContextBase and represents access to the database. Contains the database table in a DbSet object.  
