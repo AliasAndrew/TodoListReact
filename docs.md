@@ -58,16 +58,16 @@
 ## 3. Description of client side app
 ### Summary:
   The frontend renders the UI and handles the user interactions in the browser, communicating with the backend at the same time.
-### Structure of the project:
-  _index.js_
-  The entry point of the frontend script, the UI is built here from the React.DOM in the render function.
-  _App.js_
-  The main component, renders the todo list from TodoItems and the AddTodo component and also contains the logic for handling them.
-  _Components folder:_
-	  _TodoItem.js_
-	...
-	  _AddTodo.js_
-	...
+### Structure of the project:  
+  _index.js_  
+  The entry point of the frontend script, the UI is built here from the React.DOM in the render function.  
+  _App.js_  
+  The main component, renders the todo list from TodoItems and the AddTodo component and also contains the logic for handling them.  
+  _Components folder:_  
+	  _TodoItem.js_  
+	...  
+	  _AddTodo.js_  
+	...  
 
 
 
